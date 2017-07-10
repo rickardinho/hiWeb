@@ -1,0 +1,28 @@
+.message {
+    text-align: center;
+    position: fixed;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    top: 5%;
+    line-height: 3;
+    border-radius: 5px;
+
+    &.offline {
+        @include icon-after("\f119");
+    }
+}
+
+.activate {
+    animation: fadeInOut 2s ease-in-out 0s 1;
+
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

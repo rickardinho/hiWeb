@@ -1,0 +1,79 @@
+.modal-container {
+    display: none;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+    color: aliceblue;
+    z-index: 10;
+    position: fixed;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+        color: $white;
+        font-size: 2em;
+    }
+
+    div {
+        border: 3px solid white;
+        margin: 0.5em;
+
+        &.delete {
+            border-color: $red;
+            color: $red;
+        }
+
+        &.cancel {
+            border-color: white;
+            color: white;
+        }
+    }
+}
+
+.photo-modal-container {
+    display: none;
+    height: 35%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 1px 7px 2px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    position: fixed;
+    top: 35%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+
+    .fa-times {
+        position: relative;
+        left: 45%;
+        // top: -5%;
+        font-size: 1em;
+        display: block;
+        margin-bottom: 0.5em;
+        color: $off-black;
+    }
+
+    div {
+        position: relative;
+        border: 2px solid $off-black;
+        margin: 0.5em;
+        line-height: 2em;
+
+        &.delete {
+            position: relative;
+            border-color: $red;
+            color: $red;
+        }
+
+        &.share {
+            position: relative;
+            border-color: $facebook-blue;
+            color: $facebook-blue;
+        }
+    }
+
+}

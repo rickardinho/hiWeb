@@ -1,0 +1,98 @@
+.notification {
+    box-shadow: 7px 2px 12px -3px rgba(191,191,191,1);
+    border-left: 0.2em solid $going;
+    border-bottom: 0.19em solid $light-grey;
+    padding-left:0.5em;
+
+    &.viewed-notification {
+        border-left: 0.2em solid white;
+    }
+}
+
+.notification a {
+    color: $dark-grey;
+
+    .notification-middle-column {
+        border-right: 0.1em solid $light-grey;
+        padding-right: 0.3em;
+    }
+    .notification-right-column {
+        margin-left: 0.4em;
+        margin-top: 3%;
+    }
+    img {
+        margin-top: 0.8em;
+    }
+    .timestamp {
+        font-size: 0.7em;
+        font-weight: 200;
+        padding-left: 0.3em;
+        margin: 0.5em 0;
+    }
+    .subject-name, .number-of-invites {
+        color: $black;
+
+        font-weight: bolder;
+        padding-left: 0.2em;
+        padding-right: 0.1em;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        span {
+            color: $dark-grey;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+    }
+    .event-name {
+        color: $dark-grey;
+        font-size: 0.9em;
+        padding-left: 0.3em;
+        margin-bottom: 0.2em;
+        font-weight: 500;
+    }
+    .number-of-invites {
+        span{
+            color: $dark-grey;
+            font-weight: 200;
+        }
+    }
+    .date {
+        margin-top: 1em;
+        margin-bottom: 0.7em;
+    }
+    .date, .placeName {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/****
+Rules shared with CalendarItem
+***/
+
+.placeName {
+    @include icon("\f041 \00a0 \00a0");
+}
+
+.date {
+    @include icon("\f133");
+}
+
+.time {
+    @include icon("\f017");
+}
+
+.notification a, .calendar-item a {
+
+    .eventWhat, .date, .time, .placeName {
+        line-height: 1.2em;
+        position: relative;
+        display: inline-block;
+        font-size: 1.2rem;
+        color: $black;
+        font-weight: 400;
+    }
+    .placeName {
+        text-align: left;
+    }
+}

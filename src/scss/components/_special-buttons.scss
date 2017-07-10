@@ -1,0 +1,11 @@
+.facebook {
+  background-color: $facebook-blue;
+  color: $white;
+}
+
+.facebook:before {
+    font-family: "fontawesome";
+    content: "\f230 ";
+    font-size: 2em;
+    color: $white;
+}

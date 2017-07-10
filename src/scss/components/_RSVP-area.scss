@@ -1,0 +1,54 @@
+.RSVP-button {
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    padding: 0.4em;
+    margin-bottom: 0.5em;
+
+    &.going {
+        background-color: $going;
+    }
+
+    &.maybe {
+        background-color: $maybe;
+    }
+
+    &.not-going {
+        background-color: $not-going;
+    }
+
+    &.not-responded {
+        background-color: $dark-grey;
+    }
+}
+
+.RSVP-flex-container {
+    margin-left: 1em;
+}
+
+.RSVP-user-list {
+    padding-left: 15px;
+}
+
+.rsvp-title {
+    margin: 0.2em 0;
+}
+
+.header.rsvp-list-items {
+        font-size: 0.7em;
+}
+
+/* Semantic UI override */
+
+.ui.list, ol.ui.list, ul.ui.list {
+    margin: 0.1em 0 !important;
+}
+
+.ui.horizontal.list > .item {
+    margin-left: 0 !important;
+    padding-right: 0.5em;
+}
+
+.rsvp-list-items {
+    color: $dark-grey !important;
+}

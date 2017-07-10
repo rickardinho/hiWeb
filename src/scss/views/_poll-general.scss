@@ -1,0 +1,121 @@
+.poll {
+
+    .event-note {
+        color: $grey;
+        margin-bottom: 0.2em;
+
+    }
+
+    .tally {
+        color: $off-black;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .eventWhat, .eventWhere, .eventWhen {
+        display: block;
+        margin-bottom: 1.3em;
+
+        i {
+            margin-right: 0.5em;
+            font-size: 1.2em;
+        }
+
+        span.long {
+            font-size: 0.7em;
+        }
+
+        .poll-option {
+            line-height: 1.5em;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            padding: 6px 0.9em;
+            text-align: left;
+        }
+    }
+
+    .eventWhat {
+        .section-title {
+            color: $what;
+        }
+
+        .poll-option {
+            color: $what;
+            border: 1px solid $what;
+
+            &.selected {
+                background-color: $what;
+                color: white;
+            }
+        }
+
+        .tally {
+            color: $what;
+        }
+    }
+
+    .eventWhere {
+        .section-title {
+            color: $where;
+        }
+
+        i:before {
+            margin-bottom: 0.5em;
+        }
+
+        .poll-option {
+            color: $where;
+            border: 1px solid $where;
+            line-height: 20px;
+
+            span.placeAddress {
+                color: $black;
+                font-weight: normal;
+                font-style: italic;
+                font-size: 0.75em;
+                text-align: left;
+
+                &:before {
+                    content: '\00a0 \00a0 \00a0';
+                }
+            }
+            &.selected {
+                background-color: $where;
+                color: white;
+
+                span.placeAddress {
+                    color: $white;
+                }
+            }
+        }
+
+        .tally {
+            color: $where;
+        }
+    }
+
+    .eventWhen {
+        .section-title {
+            color: $when;
+        }
+
+        .poll-option {
+            color: $when;
+            border: 1px solid $when;
+            text-align: left;
+
+            &.selected {
+                background-color: $when;
+                color: $white;
+            }
+            span.date, span.time {
+                margin-right: 1em;
+                font-size: 0.9em;
+            }
+        }
+
+        .tally {
+            color: $when;
+        }
+    }
+}

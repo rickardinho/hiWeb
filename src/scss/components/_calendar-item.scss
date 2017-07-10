@@ -1,0 +1,54 @@
+/****
+component CalendarItem shares some css rules with Notification.
+See _notification.scss partial for shared rules.
+***/
+.calendar-item {
+    box-shadow: 7px 2px 12px -3px rgba(191,191,191,1);
+    padding: 1em;
+}
+.calendar-item a {
+
+    label.date {
+        margin-right: 0.6em;
+    }
+
+    .calendar-title {
+        display: inline;
+        font-weight: bolder;
+        color: $dark-grey;
+        padding-left: 0.3em;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        span {
+            margin-left: 0.3em;
+        }
+    }
+    a {
+        .date, .placeName {
+            color: $dark-grey;
+            text-align: left;
+            margin: 0 8px 10px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+
+        }
+
+
+        img {
+            border: 1px solid $grey;
+            padding: 3px;
+        }
+    }
+    .fa-check-circle {
+        color: $going;
+    }
+    .fa-question-circle {
+        color: $maybe;
+    }
+    .fa-times-circle {
+        color: $not-going;
+    }
+    .fa-exclamation-circle {
+        color: $dark-grey;
+    }
+}

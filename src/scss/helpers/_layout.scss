@@ -1,0 +1,17 @@
+.verticalise {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify {
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.flex {
+    display: flex;
+}
+
+.centre {
+    text-align: center;
+}

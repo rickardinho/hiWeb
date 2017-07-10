@@ -1,0 +1,75 @@
+.confirmed-event, .confirm-new-event {
+
+    span {
+        display: block;
+        // margin-right: 1em;
+    }
+
+    .placeName, .date {
+        font-size: 0.9em;
+    }
+
+    .placeAddress {
+        color: $grey;
+    }
+
+
+    // margin-bottom: 0.5em;
+
+    &.what, &.where, &.when {
+        border-radius: 50px;
+        padding: 0.7em;
+        color: white;
+        text-align: center;
+    }
+
+    &.what {
+        background-color: $what;
+    }
+    &.where {
+        background-color: $where;
+    }
+    &.when {
+        background-color: $when;
+    }
+}
+
+.confirm-new-event {
+    margin-bottom: 10px;
+}
+
+.confirmed-event-title, .confirm-new-event-title {
+
+    &.what {
+        color: $what;
+    }
+    &.where {
+        color: $where;
+    }
+    &.when {
+        color: $when;
+    }
+}
+
+.upload-panel {
+
+    p {
+        text-align: center;
+    }
+
+    .file-button {
+        text-align: center;
+        background-color: $blue;
+        color: white;
+        padding: 0.4em;
+        border-radius: 20px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+/***
+Hide default file upload button
+**/
+input[type="file"] {
+    display: none;
+}

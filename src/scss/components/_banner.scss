@@ -1,0 +1,17 @@
+.app {
+    z-index: -5;
+}
+
+.banner {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    img {
+
+        height: 10rem;
+        width: 100%;
+        object-fit: fill;
+        object-position: 0 0;
+    }
+}

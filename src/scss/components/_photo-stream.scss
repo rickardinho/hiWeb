@@ -1,0 +1,32 @@
+.photo {
+    display: block;
+    width: 98%;
+    margin: 30px 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid $grey;
+        position: relative;
+        left: 3%;
+    }
+
+    i {
+        display: inline;
+        font-size: 1.6em;
+        margin-left: 4%;
+        position: relative;
+        left: 4%;
+        color: $dark-grey;
+    }
+}
+
+.photo-button {
+    font-size: 1.6rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    line-height: 3rem;
+    &.share {
+        @include icon("\f230");
+    }
+}
