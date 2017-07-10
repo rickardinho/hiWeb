@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './general/navbar.jsx';
-import Message from './general/message.jsx';
+import Navbar from './general/navbar.js';
+import Message from './general/message.js';
 
 const App = ({ location, children, error }) => {
 
