@@ -4,7 +4,8 @@ import { Router, Route, hashHistory, browserHistory, IndexRoute } from 'react-ro
 import { Provider } from 'react-redux';
 
 import AppContainer from './containers/app-container.js';
-import ProfileContainer from './containers/profile-container.js';
+import FarmSummaryContainer from './containers/farmSummary-container.js';
+import FarmDetailContainer from './containers/farmDetail-container.js';
 
 require('../scss/main.scss');
 require('../scss/font-awesome/font-awesome.scss');
