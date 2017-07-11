@@ -12,28 +12,28 @@ const Navbar = ({ currentLocation }) => {
         "display-none": currentLocation === "/"
     });
 
-    let albumsClasses = classnames("nav-button", {
-        "selected": currentLocation.indexOf("/albums") > -1
+    let farmSummaryClasses = classnames("nav-button", {
+        "selected": currentLocation.indexOf("/farmSummary") > -1
     });
 
-    let calendarClasses = classnames("nav-button", {
-        "selected": currentLocation.indexOf("/calendar") > -1
+    let farmDetailClasses = classnames("nav-button", {
+        "selected": currentLocation.indexOf("/farmDetail") > -1
     });
 
 
     return (
         <div className={ navbarClasses }>
-            <Link className={ albumsClasses } to="albums">
+            <Link className={ farmSummaryClasses } to="farmSummary">
                 <div >
                     <i className="fa fa-camera nav-icon "></i>
-                    <label className="menu-label">Albums</label>
+                    <label className="menu-label">Farm Summary</label>
                 </div>
             </Link>
 
-            <Link className={ calendarClasses } to="calendar">
+            <Link className={ farmDetailClasses } to="farmDetail">
                 <div>
                     <i className="fa fa-calendar nav-icon"></i>
-                    <label className="menu-label">Calendar</label>
+                    <label className="menu-label">Farm Details</label>
                 </div>
             </Link>
 
