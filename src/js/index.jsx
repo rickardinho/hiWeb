@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import AppContainer from './containers/app-container.js';
 import FarmSummaryContainer from './containers/farmSummary-container.js';
 import FarmDetailContainer from './containers/farmDetail-container.js';
+import LoginContainer from './containers/login-container.js';
 
 require('../scss/main.scss');
 require('../scss/font-awesome/font-awesome.scss');
