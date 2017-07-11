@@ -5,7 +5,7 @@ import classnames from 'classnames';
 const Navbar = ({ currentLocation }) => {
 
     if (process.env.DEVELOPMENT) {
-        currentLocation = '/feed';
+        currentLocation = '/farmSummary';
     }
 
     let navbarClasses = classnames("navbar", {
