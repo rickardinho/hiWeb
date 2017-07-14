@@ -38,5 +38,5 @@ ReactDOM.render(
             { routes }
         </Router>
     </Provider>,
-    document.getElementsByClassName('content')[0]
+    document.getElementsByClassName('root')[0]
 );
