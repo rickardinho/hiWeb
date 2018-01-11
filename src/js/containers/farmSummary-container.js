@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import FarmDetail from '../components/farmDetail';
+import FarmSummary from '../components/farmSummary';
 
 
 const mapStateToProps = ({ feed, user, network }) => {
@@ -10,6 +10,7 @@ const mapStateToProps = ({ feed, user, network }) => {
 
     };
 };
+
 const mapDispatchToProps = (dispatch, props) => {
     const { navigation } = props;
     return {
@@ -18,9 +19,9 @@ const mapDispatchToProps = (dispatch, props) => {
 };
 
 
-const FarmDetailContainer = connect(
+const FarmSummaryContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(FarmDetail);
+)(FarmSummary);
 
-export default FarmDetailContainer;
+export default FarmSummaryContainer;

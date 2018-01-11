@@ -1,19 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import App from '../components/app.jsx';
+import App from '../components/app.js';
 
 const mapStateToProps = (state) => {
     return {
-        error: state.user.error || state.auth.error || state.createEvent.error || state.event.error
+
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
 
     return {
-        login: () => {
-            dispatch(userLogin());
-        }
+
     };
 };
 
