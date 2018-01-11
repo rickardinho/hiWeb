@@ -2,13 +2,22 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/index.jsx",
+    entry: "./src/index.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js"
     },
     module: {
         loaders: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel',
+                exclude: /node_modules/,
+                query: {
+                    cacheDirectory: true,
+                    presets: ['react', 'es2015']
+                }
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
@@ -28,5 +37,8 @@ module.exports = {
                 loader: "style-loader!css-loader!postcss-loader!sass-loader"
             }
         ]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     }
 };
