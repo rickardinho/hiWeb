@@ -4,9 +4,13 @@ import { PureGridProvider } from 'react-pure-grid';
 import Table from './general/Table';
 
 const farmDetail = () => (
-  <PureGridProvider gutterSize={4}>
-    <Table />
-  </PureGridProvider>
+
+  <div>
+    // <PureGridProvider gutterSize={4}>
+      // <Table />
+    // </PureGridProvider>
+  </div>
+
 );
 
 render(<farmDetail />, document.getElementById('app'));
